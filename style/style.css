@@ -49,13 +49,27 @@ p {
 }
 
 .header-top__right {
+    display: flex;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.select-bg {
+    background-color: #7AC751;
+    color: white;
+    border: none;
+    outline: none;
 }
 
 .header-right__separator {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.button-top__right-el {
+    background-color: #7AC751;
+    border: none;
+    color: white;
 }
 
 .header__middle {}
@@ -95,10 +109,13 @@ p {
 
 .select-form {
     border: none;
+    outline: none;
     padding-left: 10px;
 }
 
-.header-button {}
+.header-container__bottom {
+    margin-top: 25px;
+}
 
 .header-button__elem {
     width: 55px;
@@ -279,6 +296,8 @@ p {
 .header__center-img-wrap {
     width: 374px;
     height: 374px;
+    margin-left: 16px;
+    margin-top: 46px;
 }
 
 .header-center__img-bg {
@@ -309,7 +328,9 @@ p {
     width: 24px;
 }
 
-.heder-center__ul {}
+.heder-center__ul {
+    margin-top: 66px;
+}
 
 .header-center__img-sm {
     padding-bottom: 5px;
@@ -342,7 +363,7 @@ p {
 
 .main-info {
     display: flex;
-    padding-top: 569px;
+    padding-top: 65px;
     align-items: center;
     justify-content: center;
 }
@@ -368,4 +389,91 @@ p {
 .main-info__subtitle {
     font-size: 14px;
     color: rgba(81, 81, 81, 0.71);
+}
+
+.main-collection {
+    margin-top: 70px;
+}
+
+.main-collection__items {
+    display: flex;
+}
+
+.main-collectoin__item-lf {
+    padding-right: 19px;
+}
+
+.main-collection__item-rg-wrap {
+    padding-bottom: 13px;
+}
+
+.main-collection__item-rg-wrap:last-child {
+    padding-bottom: 0;
+}
+
+.main-collection__info {
+    position: absolute;
+    margin-top: 49px;
+    padding-left: 31px;
+}
+
+.main-collection__title {
+    font-size: 22px;
+    color: #555555;
+    padding-bottom: 10px;
+}
+
+.main-collection__subtitle {
+    font-size: 20px;
+    color: #7AC751;
+    padding-bottom: 13px;
+}
+
+.main-trending__title {
+    font-size: 36px;
+    color: #555555;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-trending__sec-items {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    align-items: center;
+}
+
+.main-trending__sec-item {
+    padding-right: 70px;
+    font-size: 24px;
+}
+
+.main-trending__sec-item:last-child {
+    padding-right: 0px;
+}
+
+.colorver {
+    color: #7AC751;
+}
+
+.main-trending__tov-items {
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+}
+
+.main-trending__tov-item {
+    grid-column: span 3;
+}
+
+.main-trending__tov-cen {
+    display: flex;
+}
+
+.main-trending__tov-cen-el {
+    margin-right: 7px;
+}
+
+.main-trending__tov-cen-el:last-child {
+    margin-right: 0px;
 }
