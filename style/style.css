@@ -482,12 +482,17 @@ p {
 
 .main-trending__tov-items {
     display: grid;
-    grid-template-columns: repeat(12, auto);
+    grid-template-columns: repeat(auto-fill, minmax(269px, 1fr));
+    grid-gap: 32px 32px;
 }
 
-.main-trending__tov-item {
-    grid-column: span 3;
+.main-trending__tov-item-img {
+    object-fit: cover;
+    width: 100%;
+    height: 288px;
 }
+
+.main-trending__tov-item {}
 
 .main-trending__tov-cen {
     display: flex;
@@ -846,14 +851,12 @@ p {
 
 .main-articles__items {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(570px, 1fr));
-    grid-template-rows: repeat(2, 455px);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 22px 26px;
 }
 
 .main-articles__item-elements {
     position: relative;
-    flex: 1 1 50%;
 }
 
 .main-articles__item-elem {
@@ -865,7 +868,6 @@ p {
 
 .main-articles__item-img-wrap {
     position: absolute;
-    overflow: hidden;
     width: 100%;
     height: 100%;
     top: 0%;
@@ -913,4 +915,73 @@ p {
 
 .main-articles__item-hr.active {
     color: #FFFFFF;
+}
+
+.footer {
+    margin-top: 115px;
+}
+
+.footer-lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list__icon-soc {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.footer-list__icon-text {
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 10px;
+}
+
+.footer-list__icon-soc-el {
+    padding-right: 35px;
+}
+
+.footer-list__icon-soc-el:last-child {
+    padding-right: 0px;
+}
+
+.footer-list__elem {
+    font-size: 18px;
+    color: #555555;
+    line-height: 40px;
+}
+
+.footer-list__elem.active {
+    color: #515151;
+    font-weight: bold;
+}
+
+.footer-end {
+    color: #555555;
+    border-top: 1px solid #969696;
+    margin-top: 64px;
+    padding-top: 53px;
+    padding-bottom: 35px;
+}
+
+.footer-right__items {
+    display: flex;
+}
+
+.footer-right__item {
+    padding-right: 51px;
+}
+
+.footer-right__item:last-child {
+    padding-right: 0px;
+}
+
+.footer-end__elements {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-articles__item-hr {
+    padding-bottom: 30px;
 }
